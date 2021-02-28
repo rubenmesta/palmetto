@@ -1,0 +1,42 @@
+$blue: #3427c6;
+$divider: #ebebeb;
+
+#root {
+  .container {
+    max-width: 900px;
+  
+  }
+}
+.main {
+  background-color: #fefaff;
+
+  .search {
+    margin: 4em 2em;
+
+    @media only screen and (max-width: 600px) {
+      margin: 4em 0 0 0;
+    }
+  }
+}
+
+.images-list {
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    color: $blue;
+    font-weight: 600;
+
+    a {
+      color: $blue;
+    }
+  }
+}
+
+.items-list {
+  margin-top: 4em;
+  border-left: 1px solid $divider;
+  height: 100vh;
+  text-align: center;
+}
