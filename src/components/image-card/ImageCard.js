@@ -44,7 +44,6 @@ const ImageCard = ({ image, ...props }) => {
         setLikes(`${image.likes + 1}`)
         setColor("#990000");
         setLiketext(!islikeText);
-        console.log(image.likes);
     };
 
 

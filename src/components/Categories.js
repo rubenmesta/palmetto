@@ -4,6 +4,7 @@ export const Categories  = {
         { key: 'Categories', text: 'Categories...', value: 'Categories' },
         { key: 'fashion', text: 'fashion', value: 'fashion' },
         { key: 'nature', text: 'nature', value: 'nature' },
+        { key: 'backgrounds', text: 'backgrounds', value: 'backgrounds' },
         { key: 'science', text: 'science', value: 'science' },
         { key: 'education', text: 'education', value: 'education' },
         { key: 'people', text: 'people', value: 'people' },
