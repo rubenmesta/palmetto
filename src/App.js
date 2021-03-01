@@ -61,8 +61,8 @@ function App() {
           <div className="items-list">
             <h2>Saved</h2>
                 <ul className="images-list">
-                    {savedImages.map((item) => (
-                          <li key={item}>{item}
+                    {savedImages.map((item, i) => (
+                          <li key={i}>{item}
                           <OpenInNewIcon style={{ marginLeft: 8, fontSize:18  }} />
                           </li> 
                     ))}
