@@ -51,7 +51,7 @@ const ImageSearch = ({ searchText, searchCategory }) => {
                 autoFocus={true} />
                 
                 <Form.Text className="text-muted">
-                Please enter a keywork or choose from Categories
+                Please enter a keyword or choose a Category
                 </Form.Text>
             </Form.Group>
 

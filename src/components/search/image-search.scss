@@ -6,7 +6,6 @@ $grey: #757575;
     .search-form {
 
       .search-select {
-
         position: relative;
 
         &::after {
@@ -21,7 +20,7 @@ $grey: #757575;
 
         select {
             appearance: none;
-            background: transparent;
+            background: #ffffff;
             color: $grey;
 
         }
