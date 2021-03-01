@@ -47,7 +47,8 @@ const ImageSearch = ({ searchText, searchCategory }) => {
                 <Form.Control 
                 onChange={handleChange}  
                 type="text" 
-                placeholder="Keyword..." />
+                placeholder="Keyword..."
+                autofocus="true" />
                 
                 <Form.Text className="text-muted">
                 Please enter a keywork or choose from Categories
