@@ -1,7 +1,7 @@
 
 export const Categories  = {
     categories : [
-        { key: 'Categories', text: 'Categories...', value: 'Categories' },
+        { key: 'Category', text: 'Category...', value: 'Category' },
         { key: 'fashion', text: 'fashion', value: 'fashion' },
         { key: 'nature', text: 'nature', value: 'nature' },
         { key: 'backgrounds', text: 'backgrounds', value: 'backgrounds' },

@@ -1,4 +1,6 @@
 
+$grey: #757575;
+
 .search {
 
     .search-form {
@@ -14,13 +16,13 @@
             right: 0;
             padding: 0 10px;
             line-height: 40px;
-            color: #757575;
+            color: $grey;
         }
 
         select {
             appearance: none;
             background: transparent;
-            color: inherit;
+            color: $grey;
 
         }
       }
