@@ -27,18 +27,21 @@ const ImageCard = ({ image, ...props }) => {
         setBackground(background);
       };
 
-    const handleSave = () => {
-
-      if (!isSaved) {
-        updateSave(true);
-        setButtonText("Saved");
-        setStyle("#d88c4d", "#a94965");
-        props.updateSavedImages([<a href={url} target="_blank" rel="noreferrer" id={id}>#{id}</a>]);
-      } 
-      else {
-        updateSave(false);  
-      }
-    };
+      const handleSave = () => {
+        let currentSavedImages = props.savedImages;
+        if (!isSaved) {
+          updateSave(true);
+          setButtonText("Saved");
+          setStyle("#d88c4d", "#a94965");
+          if (!currentSavedImages.includes(id))
+            props.updateSavedImages([...currentSavedImages, <a href={url} target="_blank" rel="noreferrer" id={id}># {id}</a>]);
+        } else {
+          updateSave(false);
+          if (currentSavedImages.includes(id))
+            props.updateSavedImages(currentSavedImages.filter(image => image !== id));
+           
+        }
+      };
    
     const addLike = () => {
         setLikes(`${image.likes + 1}`)
