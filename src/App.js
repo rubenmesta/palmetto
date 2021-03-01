@@ -15,10 +15,12 @@ function App() {
   const [query, setQuery] = useState('');
   const [savedImages, updateSavedImages] = useState([]);
   const limit = 10;
+  const mediaType = "photo";
+  const apiKey = "13136421-266c28a6d61717bc2e4e6a83e";
 
   useEffect(() => {
     
-    fetch(`https://pixabay.com/api/?key=13136421-266c28a6d61717bc2e4e6a83e&q=${query}&image_type=photo&per_page=${limit}`)
+    fetch(`https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=${mediaType}&per_page=${limit}`)
       .then(res => res.json())
       .then(data => {
         setImages(data.hits);

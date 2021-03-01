@@ -32,7 +32,7 @@ const ImageSearch = ({ searchText, searchCategory }) => {
     
       let selectOptions = Categories.categories.map( (name) => {
         return (
-          <option name={name.text} key={name.text}>{name.text}</option>
+          <option name={name.text} key={name.key}>{name.text}</option>
         )
       });
       
