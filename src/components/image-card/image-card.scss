@@ -2,6 +2,7 @@ $teal: #4da18e;
 $white: #fff;
 $save : #a94965;
 $saved: #d88c4d;
+$grey :#757575;
 
 .search-form {
     width: 100%;
@@ -92,6 +93,7 @@ $saved: #d88c4d;
                 display: flex;
                 align-items: center;
                 flex: 1;
+                color: $grey;
 
                 .count {
                     max-width: 50px;

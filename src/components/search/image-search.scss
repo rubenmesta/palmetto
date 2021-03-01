@@ -1,4 +1,30 @@
-.search{
+
+.search {
+
+    .search-form {
+
+      .search-select {
+
+        position: relative;
+
+        &::after {
+            content: "\25bc";
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 10px;
+            line-height: 40px;
+            color: #757575;
+        }
+
+        select {
+            appearance: none;
+            background: transparent;
+            color: inherit;
+
+        }
+      }
+    }
 
     .no-images {
         text-align: center;

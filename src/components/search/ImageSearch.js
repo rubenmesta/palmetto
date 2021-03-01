@@ -48,14 +48,14 @@ const ImageSearch = ({ searchText, searchCategory }) => {
                 onChange={handleChange}  
                 type="text" 
                 placeholder="Keyword..."
-                autofocus="true" />
+                autoFocus={true} />
                 
                 <Form.Text className="text-muted">
                 Please enter a keywork or choose from Categories
                 </Form.Text>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group className="search-select">
                 <Form.Control as="select"  onChange={handleSelect} >
                    {selectOptions}
                 </Form.Control>
